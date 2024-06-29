@@ -1,0 +1,24 @@
+{
+  "name": "local-llm-rag",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "npm run build:index",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build:index": "node createIndex.js"
+  },
+  "dependencies": {
+    "@mlc-ai/web-llm": "^0.2.46",
+    "pagefind": "^1.1.0",
+    "vue": "^3.4.29"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1",
+    "vue-tsc": "^2.0.21"
+  }
+}
